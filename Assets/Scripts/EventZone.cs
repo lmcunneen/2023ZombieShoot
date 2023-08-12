@@ -27,6 +27,8 @@ public class EventZone : MonoBehaviour
             isDone = true;
 
             onTriggerEntered.Raise(this, null);
+
+            Debug.Log(gameObject.name + " has been Triggered!");
         }
     }
 

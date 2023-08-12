@@ -45,6 +45,16 @@ public class LightFlickerControl : MonoBehaviour
         makeItFlicker = !makeItFlicker;
     }
 
+    public void FlickeringFalse()
+    {
+        makeItFlicker = false;
+    }
+
+    public void FlickeringTrue()
+    {
+        makeItFlicker = true;
+    }
+
     public void ToggleLightState()
     {
         thisLight.enabled = !thisLight.enabled; // NOTE - This doesn't work on a flickering light.
